@@ -17,9 +17,23 @@
         max-width: 100%;
         vertical-align: top;
         padding: 0 5px ;
+        display: block;
+    }
+    img#responsive {
+            display: none;
+    }
+
+    @media screen and (max-width: 768px){
+        img#responsive {
+            display: block;
+        }
+        img{
+            display: none;
+        }
     }
 </style>
 <body>
+    <img src="imgs/invie-responsive.png" alt="" id="responsive">
     <header>
         <img src="imgs/header.jpg" alt="">
     <a href=""></a>
@@ -31,10 +45,8 @@
     <section id="guitarras">
         <img src="imgs/acustica.jpg" alt="">
         <img src="imgs/clasica.jpg" alt="">
+        <img src="imgs/footer.jpg" alt="">
     </section>
-    <footer>
-        <!-- <img src="imgs/footer.jpg" alt=""> -->
-    </footer>
     
 </body>
 </html>
